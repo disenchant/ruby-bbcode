@@ -20,6 +20,10 @@ module RubyBBCode
         :html_open => '<span style="text-decoration:line-through;">', :html_close => '</span>',
         :description => 'Strike-through text',
         :example => 'This is [s]wrong[/s] good.'},
+      :code => {
+        :html_open => '<pre><code>', :html_close => '</code></pre>',
+        :description => 'Show as code block',
+        :example => 'This is code: [code]alert("hello world")[/code].'},
       :center => {
         :html_open => '<div style="text-align:center;">', :html_close => '</div>',
         :description => 'Center a text',
