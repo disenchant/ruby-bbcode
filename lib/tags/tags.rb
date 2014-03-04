@@ -25,9 +25,13 @@ module RubyBBCode
         :description => 'Marked/Highlighted text',
         :example => 'This is [m]marked[/m].'},
       :code => {
+        :html_open => '<code>', :html_close => '</code>',
+        :description => 'Show as code',
+        :example => 'This is code: [code]alert("hello world")[/code].'},
+      :codeblock => {
         :html_open => '<pre><code>', :html_close => '</code></pre>',
         :description => 'Show as code block',
-        :example => 'This is code: [code]alert("hello world")[/code].'},
+        :example => 'This is a code block: [codeblock]alert("hello world")[/codeblock].'},
       :center => {
         :html_open => '<div style="text-align:center;">', :html_close => '</div>',
         :description => 'Center a text',
